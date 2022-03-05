@@ -1,0 +1,21 @@
+{
+  "name": "api-nbyn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.17.0",
+    "sequelize-cli": "^6.4.1",
+    "sqlite3": "^5.0.2",
+    "uui": "^1.0.7"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  }
+}
