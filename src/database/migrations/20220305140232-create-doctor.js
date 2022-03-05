@@ -8,12 +8,11 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.STRING
       },
-      name: {
-        type: Sequelize.STRING
-      },
-      email: {
-        type: Sequelize.STRING
-      },
+
+      // fk: chave do usuário
+
+      //
+
       crm: {
         type: Sequelize.STRING
       },

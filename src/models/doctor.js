@@ -8,9 +8,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Doctor.init({
-    name: DataTypes.STRING,
-    email: DataTypes.STRING,
-    crm: DataTypes.STRING
+    crm: DataTypes.STRING,
+    id_user: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Doctor',
