@@ -4,25 +4,23 @@ module.exports = {
     await queryInterface.createTable('Users', {
       id: {
         allowNull: false,
-        autoIncrement: true,
+        autoIncrement: false,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.UUID,
+        defaultValue: Sequelize.UUIDV4 // Or DataTypes.UUIDV1
       },
-      name: {
+      firstName: {
         type: Sequelize.STRING
       },
       email: {
         type: Sequelize.STRING
       },
+      id_role: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
-      },
-      flag: {
-        allowNull: false,
-        // qual tipo da flag?
-
-        //
       },
       updatedAt: {
         allowNull: false,
