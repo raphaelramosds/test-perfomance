@@ -22,4 +22,4 @@ Cache is defined as a storage layer which provides fast access to a large amount
 
 Basically, when a client request something, Node.js server put this request on the main process. But sometimes it may overload your software. So once you use clusters, it's possible to split the main process on two, three, ..., as many proccess (*workers*) as you want, provided that this amount doesn't go over your computer's number of kernels. That's paramount for your application's perfomance.
 
-Futher details: [Utilizando módulo cluster](https://www.infoq.com/br/articles/nodejs-utilizando-modulo-de-cluster/)
+Futher details: [utilizando módulo cluster](https://www.infoq.com/br/articles/nodejs-utilizando-modulo-de-cluster/)
