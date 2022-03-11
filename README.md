@@ -1,6 +1,6 @@
 # API's optimization
 
-Firstly, please have a look at the [EER modelling](https://whimsical.com/hospital-LUBPnbw7kzAbDqbY1GWLKR) used by this application, once it's a test enviroment I've built for put in practice my API's perfomance improvement skills
+Firstly, please have a look at the [EER modelling](https://whimsical.com/hospital-LUBPnbw7kzAbDqbY1GWLKR) used by this application, once this repo is aimed to test an enviroment I've built for put in practice my API's perfomance improvement skills
 
 ## Concepts
 
