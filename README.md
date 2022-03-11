@@ -12,6 +12,12 @@ Making changes in applications without affecting the user/client experience migh
 
 ## Cache
 
-Cache is defined as a storage layer which provides fast access to a large amount of data. The ideia is essentialy allocate a intermediated database between your application and the main data store for retrieve data to the client without him needing to request this data again from you main DB.
+Cache is defined as a storage layer which provides fast access to a large amount of data. The ideia is essentialy allocate a intermediated database between your application and the main data store for retrieving data to the client without him needing to request this data again from you main DB.
 
 > Here, we use Redis as a complement database between an Node.js API and a main database (SQLite)
+
+## Clusters
+
+Built-in NodeJS module that allows your to divide your application's processing amount of proccesses.
+
+Basically, when a client request something, Node.js server put this request on the main process. But sometimes it may overload your software. So once you use clusters, it's possible to split the main process on two, three, ..., as many proccess (*workers*) as you want, provided that this amount doesn't go over your computer's number of kernels. That's paramount for your application's perfomance.
