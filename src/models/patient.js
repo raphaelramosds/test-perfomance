@@ -20,5 +20,10 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Patient',
   });
+
+  Patient.associate = (models) => {
+    Patient.belongsTo(models.User);
+  }
+
   return Patient;
 };
