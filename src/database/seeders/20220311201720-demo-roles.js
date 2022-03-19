@@ -1,5 +1,4 @@
 'use strict';
-
 const { v4 } = require("uuid");
 
 module.exports = {
@@ -8,14 +7,14 @@ module.exports = {
       {
         id: v4(),
         name: "Usuário Comum",
-        createdAt: "2022-03-11",
-        updatedAt: "2022-03-11"
+        created_at: Date.now(),
+        updated_at: Date.now()
       },
       {
         id: v4(),
         name: "Administrador",
-        createdAt: "2022-03-11",
-        updatedAt: "2022-03-11"
+        created_at: Date.now(),
+        updated_at: Date.now()
       }
     ], {})
   },

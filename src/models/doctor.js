@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Doctor.init({
     crm: DataTypes.STRING,
-    id_user: DataTypes.STRING
+    user_id: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Doctor',

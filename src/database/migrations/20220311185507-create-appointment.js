@@ -7,20 +7,20 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.STRING
       },
-      id_patient: {
+      patient_id: {
         type: Sequelize.STRING
       },
-      id_doctor: {
+      doctor_id: {
         type: Sequelize.STRING
       },
       date: {
         type: Sequelize.DATEONLY
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
         type: Sequelize.DATE
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
         type: Sequelize.DATE
       }

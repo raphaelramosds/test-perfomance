@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     username: DataTypes.STRING,
     email: DataTypes.STRING,
-    id_role: DataTypes.STRING
+    role_id: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'User',
@@ -26,10 +26,10 @@ module.exports = (sequelize, DataTypes) => {
   User.associate = (models) => {
     User.belongsTo(models.Role);
     User.hasOne(models.Patient, {
-      foreignKey: "id_user"
+      foreignKey: "user_id"
     });
     User.hasOne(models.Doctor, {
-      foreignKey: "id_user"
+      foreignKey: "user_id"
     });
   }
 

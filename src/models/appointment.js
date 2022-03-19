@@ -14,8 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Appointment.init({
-    id_patient: DataTypes.STRING,
-    id_doctor: DataTypes.STRING,
+    patient_id: DataTypes.STRING,
+    doctor_id: DataTypes.STRING,
     date: DataTypes.DATEONLY
   }, {
     sequelize,
